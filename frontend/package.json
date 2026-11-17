@@ -8,7 +8,10 @@
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
     "preview": "vite preview",
-    "typecheck": "vue-tsc --noEmit"
+    "typecheck": "vue-tsc --noEmit",
+    "test:review": "node tests/run.mjs tests/review-engine.test.ts",
+    "test:review:service": "node tests/run.mjs tests/review-service.test.ts",
+    "test": "npm run test:review && npm run test:review:service"
   },
   "dependencies": {
     "pinia": "^2.1.7",

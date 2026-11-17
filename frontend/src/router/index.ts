@@ -11,6 +11,7 @@ const Eventtrace = () => import('@/views/eventtrace/index.vue')
 const Timewindow = () => import('@/views/timewindow/index.vue')
 const Device = () => import('@/views/device/index.vue')
 const Anomaly = () => import('@/views/anomaly/index.vue')
+const Review = () => import('@/views/review/index.vue')
 const Cohortcmp = () => import('@/views/cohortcmp/index.vue')
 const Funnel = () => import('@/views/funnel/index.vue')
 const Scrollmap = () => import('@/views/scrollmap/index.vue')
@@ -34,6 +35,7 @@ const router = createRouter({
     { path: '/timewindow', name: 'timewindow', component: Timewindow },
     { path: '/device', name: 'device', component: Device },
     { path: '/anomaly', name: 'anomaly', component: Anomaly },
+    { path: '/review', name: 'review', component: Review },
     { path: '/cohortcmp', name: 'cohortcmp', component: Cohortcmp },
     { path: '/funnel', name: 'funnel', component: Funnel },
     { path: '/scrollmap', name: 'scrollmap', component: Scrollmap },
